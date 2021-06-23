@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native";
-import { theme } from "../../global/styles/themes";
+import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: 56,
-    backgroundColor: theme.colors.primery,
+    backgroundColor: theme.colors.primary,
     borderRadius: 8,
     flexDirection: "row",
     alignItems: "center",
@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRightWidth: 1,
-    borderRightColor: theme.colors.lien,
+    borderRightColor: theme.colors.line,
   },
   icon: {
     width: 24,

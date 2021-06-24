@@ -8,11 +8,12 @@ import { Category } from "../Category";
 
 interface HeaderProps {
   categorySelected: string;
+  setCategory: (categoryId: string) => void;
 }
 
 export const CategorySelect: React.FC<HeaderProps> = ({
   categorySelected,
-  ...rest
+  setCategory,
 }) => {
   return (
     <ScrollView
@@ -27,6 +28,7 @@ export const CategorySelect: React.FC<HeaderProps> = ({
           title={category.title}
           icon={category.icon}
           checked={category.id === categorySelected}
+          rectButton={{ onPress: () => setCategory(category.id) }}
         />
       ))}
     </ScrollView>
